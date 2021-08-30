@@ -8,7 +8,7 @@
 int main(void) /**
 *main - Enrty point
 */
-  
+
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
