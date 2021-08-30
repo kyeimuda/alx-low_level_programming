@@ -2,10 +2,13 @@
 
 /**
  *main - Entry point
- *Return : Always 0 (succes)
+ *Return: Always 0(succes)
 */
 
-int main(void) /* Enrty piont*/
+int main(void) /**
+*main - Enrty point
+*/
+  
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
