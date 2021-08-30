@@ -30,7 +30,7 @@ printf("%d and is 0\n", lastDigit);
 }
 if (lastDigit < 6)
 {
-printf("% and is 0\n", lastDigit);
+printf("%i and is 0\n", lastDigit);
 }
 return (0);
 }
