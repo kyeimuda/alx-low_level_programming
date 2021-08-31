@@ -11,9 +11,7 @@ int main(void)
 
 {
 int ch = 'a' , j;
-{
-return (1);
-}
+
 for( j = '0' ; j <= 10 ; j++)
 {
 for( ch = 'a'; ch <= 'z'; ch++)
@@ -22,5 +20,5 @@ putchar(ch);
 }
 putchar(j);
 }
-return (0);
+return (1);
 }
