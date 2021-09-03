@@ -6,7 +6,7 @@
 *@c: The character to print
 *Return : non zero value if true
 */
-int ispper(int c)
+int isupper(int c)
 {
 return;
 }
