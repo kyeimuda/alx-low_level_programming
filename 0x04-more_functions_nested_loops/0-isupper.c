@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 #include <ctype.h>
 
 /**
@@ -6,4 +6,4 @@
 *@c: The character to print
 *Return : non zero value if true
 */
-int isupper(int c)
+int isupper(int c);
