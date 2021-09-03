@@ -7,6 +7,3 @@
 *Return : non zero value if true
 */
 int isupper(int c)
-{
-return;
-}
