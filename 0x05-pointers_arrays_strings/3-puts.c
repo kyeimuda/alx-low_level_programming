@@ -8,6 +8,9 @@
 
 void _puts(char *str)
 {
-char str;
+char n[] = "i do not fear computers. I fear the luck of them - Isaac Asimov";
+char *str;
+
+ str = &n; 
 return;
 }
