@@ -2,7 +2,7 @@
 #define HOLBERTON_H
 
 /**
-*File: holbertin.h
+*File: holberton.h
 *
 *
 */
