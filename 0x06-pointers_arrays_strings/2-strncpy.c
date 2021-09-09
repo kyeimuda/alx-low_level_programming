@@ -9,5 +9,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+char s2[];
+stcpy(s2, "First, solve the problem. Then, write the code \n");
 strncpy(dest, src, n);
 }
