@@ -2,10 +2,10 @@
 #define HOLBERTON_H
 
 /**
-*File: holberton.h
-*
-*
-*/
+ *File: holberton.h
+ *
+ *
+ */
 
 char *_strcat(char *dest, char *src);
 
