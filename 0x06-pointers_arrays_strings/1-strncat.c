@@ -10,7 +10,6 @@
 
 char *_strncat(char *dest, char* src, int n)
 {
-src = !'\0'
 strncat(dest, src, n);
 return (dest);
 }
