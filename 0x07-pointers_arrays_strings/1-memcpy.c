@@ -14,8 +14,8 @@ unsigned int i;
 char *memory = dest, *value = src;
 size_t nn = n;
 
-  for (i = 0; i < nn; i++)
-    memory[i] = value[i];
+for (i = 0; i < nn; i++)
+memory[i] = value[i];
 
-  return (memory);
+return (memory);
 }
