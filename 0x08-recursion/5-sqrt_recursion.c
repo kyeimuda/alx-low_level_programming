@@ -9,10 +9,11 @@
 
 int sqrt_check(int n, int c)
 {
-if(c * c == n)
+if (c * c == n)
 {
 return (c);
-else if(c >= n / 2)
+}
+else if (c >= n / 2)
 return (-1);
 return (sqrt_check(n, c + 1));
 }
@@ -25,9 +26,9 @@ return (sqrt_check(n, c + 1));
 
 int _sqrt_recursion(int n)
 {
-if(n == 1)
+if (n == 1)
 return (1);
-else if(n < 0)
+else if (n < 0)
 return (-1);
 else if (n == 0)
 return (0);
