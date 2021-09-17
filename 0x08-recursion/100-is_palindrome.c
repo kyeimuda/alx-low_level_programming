@@ -19,7 +19,7 @@ return (count);
 }
 
 /**
- * _pal_check - check palindrome
+ * palindrome_check - check palindrome
  * @s: string to check
  * @l: string length
  * Return: 1 when palindrome and 0 if not
