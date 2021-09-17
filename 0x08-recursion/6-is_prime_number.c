@@ -11,7 +11,7 @@ int prime_checker(int n, int a)
 {
 if(n % a == 0 && a != (n / 2))
 return (0);
-else if (a >= (n / 2)
+ else if (a >= (n / 2))
 return (1);
 else
 return (prime_checker(n, a + 1));

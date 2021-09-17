@@ -21,7 +21,7 @@ return (sqrt_check(n, c + 1));
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: squared root of this number
- * Return: square root or -1 if it is not a natural squared root 
+ * Return: square root or -1 if it is not a natural squared root
  */
 
 int _sqrt_recursion(int n)
