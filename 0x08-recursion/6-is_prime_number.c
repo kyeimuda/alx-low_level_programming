@@ -3,7 +3,7 @@
 /**
  * prime_checker - checks if a number is a prime number
  * @n: number to check
- * @f: number to check with
+ * @a: number to check with
  * Return: 1 if prime number and 0 if not
  */
 
@@ -27,7 +27,7 @@ int is_prime_number(int n)
 {
 if (n > 1)
 return (prime_checker(n, 2));
-else if(n < 0)
+else if (n < 0)
 return (0);
 return (0);
 }
