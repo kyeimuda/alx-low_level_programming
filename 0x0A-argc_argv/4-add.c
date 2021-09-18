@@ -26,7 +26,7 @@ return (0);
 }
 while (count < argc)
 {
-for (i = 0, argv[count][i] != '\0'; i++)
+for (i = 0; argv[count][i] != '\0'; i++)
 {
 if (!(isdigit(argv[count][i])))
 {
