@@ -9,7 +9,7 @@ ts
  * Return: 0
  */
 
-int main(int argc, char agrv[])
+int main(int argc, char *agrv[])
 {
 if  (argc == 3)
 {
