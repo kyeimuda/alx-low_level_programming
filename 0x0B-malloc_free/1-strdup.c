@@ -22,7 +22,7 @@ for (j = 0; j < *str; j++)
 }
 j += 1;
 
-ar = malloc(sizeof(chat) * j);
+ar = malloc(sizeof(char) * j);
 
 for (i = 0; i < j; i++)
 ar[i] = str[i];
