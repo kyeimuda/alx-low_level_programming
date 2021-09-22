@@ -19,13 +19,10 @@ return (NULL);
 
  
 while (str[j] != '\0')
-j++
+j++;
 
-j += 1;
-
-ar = malloc(sizeof(char) * j);
-
-for (i = 0; i < j; i++)
+ar = malloc((j + 1) * sizeof(char));
+for (i = 0; i <= j; i++)
 ar[i] = str[i];
 
 if (ar == NULL)
