@@ -17,7 +17,6 @@ char *ar;
 if (str == NULL)
 return (NULL);
 
- 
 while (str[j] != '\0')
 j++;
 
@@ -27,6 +26,6 @@ ar[i] = str[i];
 
 if (ar == NULL)
 return (NULL);
-
+free(ar);
 return (ar);
 }
