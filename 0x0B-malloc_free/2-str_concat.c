@@ -9,7 +9,7 @@
  * Return: pointer to sting
  */
 
-char *str_concat(chat *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 char *ar = NULL;
 unsigned int i = 0, j = 0, k;
