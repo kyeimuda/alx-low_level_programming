@@ -26,6 +26,6 @@ ar[i] = str[i];
 
 if (ar == NULL)
 return (NULL);
-free(ar);
 return (ar);
+free(ar);
 }
