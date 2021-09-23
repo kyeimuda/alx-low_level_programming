@@ -20,7 +20,9 @@ printf("%s\n", "Error");
 return (1);
 }
 amount = atoi(argv[1]);
+
 for (i = 0; i < 5; i++)
+
 while (values[i] <= amount)
 {
 coins++;
