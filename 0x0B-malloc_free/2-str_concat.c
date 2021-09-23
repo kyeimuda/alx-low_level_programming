@@ -32,7 +32,7 @@ return (NULL);
 
 while (*s1)
 {
-ar[i] = *s1:
+ar[i] = *s1;
 i++;
 s1++;
 }
