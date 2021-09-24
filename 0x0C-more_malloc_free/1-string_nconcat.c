@@ -1,48 +1,63 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
+/**
+ * _strlen - give the length of a string
+ * @s: the string
+ *
+ * Return: the length of a string
+ */
+unsigned int _strlen(char *s)
+{
+unsigned int i;
+
+for (i = 0 ; s[i] != '\0' ; i++)
+		;
+	return (i);
+}
+
 /**
  * string_nconcat - concatenates two strings
- * @s1: input one
- * @s2: input two
- * @n: s2's number of bytes
- * Return: 0
+ * @s1: string 1
+ * @s2: string 2
+ * @n: bytes of s2
+ *
+ * Return: a pointer with the content of s1 followed by n byte of s2
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *arr;
-unsigned int i, j, co, co_2;
+unsigned int length1, length2, i, j;
+char *space;
 
 if (s1 == NULL)
+{
 s1 = "";
+}
 if (s2 == NULL)
+{
 s2 = "";
-
-for (i = 0; s1[i] != '\0'; i++)
-{
 }
 
-for (j = 0; s2[j] != '\0'; j++)
+length1 = _strlen(s1);
+length2 = _strlen(s2);
+
+if (n >= length2)
 {
+n = length2;
 }
 
-if (n < j)
-j = n;
+space = malloc(sizeof(char) * (n + length1 + 1));
 
-j += i;
-arr = malloc(sizeof(char *) * (j + 1));
-
-if (arr == NULL)
+if (space == NULL)
+{
 return (NULL);
-
-for (co = 0; co < i; co++)
-arr[co] = s1[co];
-for (co_2 = 0; co < j; co_2++)
-{
-arr[co] = s2[co_2];
-co++;
 }
-co++;
-arr[co] = '\0';
-return (arr);
+
+for (i = 0 ; i < length1 ; i++)
+space[i] = s1[i];
+for (j = 0 ; s2[j] != '\0' && j != n ; j++, i++)
+space[i] = s2[j];
+
+space[i] = '\0';
+return (space);
 }
