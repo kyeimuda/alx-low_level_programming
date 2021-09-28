@@ -9,9 +9,6 @@
 
 int main(void)
 {
-char c[] = _FILE_;
-
-_putchar(c);
-
+printf("%s\n", _FILE_);
 return (0);
 }
