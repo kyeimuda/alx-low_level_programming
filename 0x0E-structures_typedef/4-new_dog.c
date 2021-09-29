@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "dog.h"
+int get_len(int i);
+char *str_copy(char *dest, char *src);
 
 /**
  * new_dog - a function that creates a new dog
@@ -9,7 +11,6 @@
  * @age: age
  * @owner: owner
  * Return: 0
-
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
