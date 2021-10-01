@@ -22,7 +22,7 @@ return (0);
 }
 for(i = 0; i < n; i++)
 {
-num = va_arg(para, unsiged int);
+num = va_arg(para, unsigned int);
 total += num;
 }
 va_end(para);
