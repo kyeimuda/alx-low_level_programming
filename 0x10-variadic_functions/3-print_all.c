@@ -68,7 +68,7 @@ printf("%s", comma);
 identifier[j].func(arguments);
 comma = ", ";
 }
-++;
+j++;
 }
 i++;
 }
