@@ -1,9 +1,8 @@
 #ifndef VARIADIC_FUNCTIONS
 #define VARIADIC_FUNCTIONS
-#include <stdarg.h>
 
 /**
- * File: variadic_fuction.h
+ * File: variadic_functions.h
  *
  *
  */
