@@ -12,7 +12,7 @@ int element;
 
 element = 0;
 
-while (h != '\0')
+while (h != NULL)
 {
 h = h->next;
 element++;
