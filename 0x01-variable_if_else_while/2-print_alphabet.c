@@ -5,6 +5,7 @@
  *
  * Return: Always 0 on success
  */
+
 int main(void)
 {
 char low_alpha;
