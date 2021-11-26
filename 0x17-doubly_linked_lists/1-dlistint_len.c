@@ -12,6 +12,7 @@ int no_element = 0;
 while (h != NULL)
 {
 h = h->next;
-no_element;
+no_element++;
 }
 return (no_element);
+}
