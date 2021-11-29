@@ -1,24 +1,24 @@
-#include <stdio.h>
-#include "main.h"
-
+#include "holberton.h"
 /**
- *main - Entry point
- *Return: Always 0 (Success)
+ * print_alphabet_x10 - print the alphabet 10 times.
+ *
+ * Return: Always 0 (Success)
  */
-
-void print_alphabet_x10(void);
-int main(void)
-
+void print_alphabet_x10(void)
 {
-int ch = 'a' , j;
+int alpha;
+int count;
+count = 0;
 
-for( j = '0' ; j <= 10 ; j++)
+while (count <= 9)
 {
-for( ch = 'a'; ch <= 'z'; ch++)
+alpha = 'a';
+while (alpha <= 'z')
 {
-putchar(ch);
+_putchar(alpha);
+alpha++;
 }
-putchar(j);
+count++;
+_putchar('\n');
 }
-return (1);
 }
