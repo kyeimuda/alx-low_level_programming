@@ -12,5 +12,3 @@ unsigned long int index;
 index = (hash_djb2(key)) % size;
 return (index);
 }
-
- 
