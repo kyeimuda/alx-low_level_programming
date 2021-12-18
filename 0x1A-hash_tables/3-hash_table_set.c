@@ -15,7 +15,7 @@ hash_node_t *element, *new_element;
 if (!ht || !key || !value)
 return (0);
 index = key_index((const unsigned char *)key, ht->size);
-elememt = ht->array[idx];
+element = ht->array[index];
 while (element)
 {
 if (strcmp(element->key, key) == 0)
@@ -31,7 +31,7 @@ element = element->next;
 new_element = malloc(sizeof(hash_node_t));
 if (!new_element)
 return (0);
-new_elemente->key = strdup(key);
+new_element->key = strdup(key);
 if (!new_elemente->key)
 return (0);
 new_element->value = strdup(value);
