@@ -32,7 +32,7 @@ new_element = malloc(sizeof(hash_node_t));
 if (!new_element)
 return (0);
 new_element->key = strdup(key);
-if (!new_elemente->key)
+if (!new_element->key)
 return (0);
 new_element->value = strdup(value);
 if (!new_element->value)
