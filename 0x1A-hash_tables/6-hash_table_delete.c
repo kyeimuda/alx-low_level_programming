@@ -27,7 +27,7 @@ temp = temp2;
 }
 }
 free(ht->array);
-free(ht)
+free(ht);
 ht = NULL;
 }
   
