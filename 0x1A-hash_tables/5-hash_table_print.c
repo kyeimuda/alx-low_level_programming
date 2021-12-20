@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-#include <stdbool.h>
+#include <stdio.h>
 
 /**
  * hash_table_print - prints a hash table
@@ -7,26 +7,25 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-register unsigned int i = 0;
-hash_node_t *element = NULL;
-_Bool first = true;
+unsigned long int i;
+hash_node_t *temp = NULL;
+char *punc = "";
 
-if (!ht)
-return;
+if (ht != NULL)
+{
 printf("{");
 for (i = 0; i < ht->size; i++)
 {
-if (ht->array[i])
+temp = ht->array[i];
+while (temp != NULL)
 {
-element = ht->array[i];
-while (element)
-{
-if (!first)
-printf(", ");
-printf("'%s': '%s'", element->key, element->value);
-element = element->next;
-}
+printf("%s'%s': '%s'", punc, temp->key, temp ->value);
+punc = ", ";
+temp = temp->next;
 }
 }
 printf("}\n");
+}
+else
+return;
 }
