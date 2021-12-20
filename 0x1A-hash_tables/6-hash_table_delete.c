@@ -14,10 +14,10 @@ hash_node_t *temp = NULL, *temp2 = NULL;
 
 if (ht != NULL)
 {
-for (i = 0; ht->size >= i; ht->size--)
+for (i = 0; i < ht->size; i++)
 {
-temp = ht->array[ht->size];
-temp2 = ht->array[ht->size];
+temp = ht->array[i];
+temp2 = ht->array[i];
 while (temp != NULL)
 {
 temp2 = temp->next;
