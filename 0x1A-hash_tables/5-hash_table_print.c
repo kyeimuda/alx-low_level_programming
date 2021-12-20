@@ -19,7 +19,7 @@ for (i = 0; i < ht->size; i++)
 temp = ht->array[i];
 while (temp != NULL)
 {
-printf("%s'%s': '%s'", punc, temp->key, temp ->value);
+printf("%s'%s': '%s'", punc, temp->key, temp->value);
 punc = ", ";
 temp = temp->next;
 }
