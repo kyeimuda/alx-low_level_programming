@@ -21,13 +21,15 @@ temp2 = ht->array[ht->size];
 while (temp != NULL)
 {
 temp2 = temp->next;
+free(temp->key);
+free(temp->value);
 free(temp);
 temp = temp2;
 }
+free(temp);
 }
 }
 free(ht->array);
 free(ht);
 ht = NULL;
 }
-  
