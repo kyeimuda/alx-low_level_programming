@@ -12,17 +12,17 @@ int last_digit;
 if (n < 0)
 {
 last_digit = (n * -1) % 10;
-_putchar(last_digit);
+_putchar(last_digit + '0');
 }
 else if (n > 0)
 {
 last_digit = n % 10;
-_putchar(last_digit);
+_putchar(last_digit + '0');
 }
 else if (n == 0)
 {
 last_digit = 0;
-_putchar(last_digit);
+_putchar(last_digit + '0');
 }
 return (last_digit);
 }
