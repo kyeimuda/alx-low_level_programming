@@ -5,6 +5,7 @@
  * @a: first number
  * @b: second number
  * Return: the results of the addition
+ */
 
 int add(int a, int b)
 {
