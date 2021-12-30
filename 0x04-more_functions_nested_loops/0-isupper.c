@@ -5,8 +5,7 @@
  *@c: The character to print
  *Return : non zero value if true
  */
-int isupper(int c)
-{
+
 int _isdigit(int c)
 {
 if (c >= 48 && c <= 57)
