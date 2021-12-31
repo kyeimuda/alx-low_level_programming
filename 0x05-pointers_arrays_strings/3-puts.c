@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
- * _puts - prints a string to stout
- *@str: string to print
- *Return: Always 0
+ * _puts - prints a string
+ * @str: the string
  */
 
 void _puts(char *str)
 {
-char n[] = "i do not fear computers. I fear the luck of them - Isaac Asimov";
-char *str;
+int i = 0;
 
- str = &n; 
-return;
+while (str[i] != '\0')
+{
+_putchar(str[i]);
+i++;
+}
+_putchar('\n');
 }
