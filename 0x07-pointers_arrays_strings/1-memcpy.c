@@ -1,21 +1,21 @@
 #include "main.h"
-#include <string.h>
 
 /**
- *_memcpy - copies memory area
- * @dest: the desrination array where the content is to be copied
- * @src: the source of data to be copied
- * @n: the number of bytes to be copied
- * Return: dest 
+ * _memcpy - function that copies memory area
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes to be copied
+ * Return: pointer to dest
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-unsigned int i;
-char *memory = dest, *value = src;
-size_t nn = n;
+unsigned int i = 0;
 
-for (i = 0; i < nn; i++)
-memory[i] = value[i];
-
-return (memory);
+while (i < n)
+{
+dest[i] = src[i];
+i++;
+}
+return (dest);
 }
