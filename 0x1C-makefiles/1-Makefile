@@ -1,0 +1,5 @@
+#1-Makefile
+CC=gcc
+SRC= main.c schooln.c
+all: $(SRC)
+	$(CC) $(SRC) -o school
