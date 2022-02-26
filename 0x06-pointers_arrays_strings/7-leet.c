@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * cap_string - capitalizes all words of a string
  * @str: the string to change the first letter of a word in uppercase
@@ -19,7 +18,7 @@ while (str[i] != '\0')
 if (i == 0 && str[i] >= 97 && str[i] <= 122)
 {
 str[i] = str[i] - 32;
-
+}
 j = 0;
 while (c[j] != '\0')
 {
