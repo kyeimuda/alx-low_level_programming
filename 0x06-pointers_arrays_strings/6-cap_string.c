@@ -19,7 +19,7 @@ while (str[i] != '\0')
 if (i == 0 && str[i] >= 97 && str[i] <= 122)
 {
 str[i] = str[i] - 32;
-
+}
 j = 0;
 while (c[j] != '\0')
 {
